@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مین روب - AmirHBuilder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="gameTitle">مین روب - AmirHBuilder</h1>
+
+    <!-- تنظیمات بازی -->
+    <div class="settings">
+        <button id="resetButton">بازی مجدد</button>
+        <select id="difficulty">
+            <option value="easy">آسان</option>
+            <option value="medium">متوسط</option>
+            <option value="hard">سخت</option>
+        </select>
+    </div>
+
+    <!-- نمایش زمان و رکورد -->
+    <div class="info">
+        <p id="timer">زمان: ۰ ثانیه</p>
+        <p id="record">رکورد: -</p>
+    </div>
+
+    <!-- صفحه بازی -->
+    <div id="board" class="board" style="display: none;"></div>
+
+    <!-- پیام بازی -->
+    <div id="message" class="message"></div>
+
+    <!-- کادر راهنمای بازی -->
+    <div id="guideModal" class="modal">
+        <div class="modal-content">
+            <h2 id="guideTitle">راهنمای بازی</h2>
+            <p id="guideText">در این بازی باید روی خانه‌های خالی کلیک کنید و از برخورد با مین‌ها پرهیز کنید.</p>
+            
+            <!-- گزینه تغییر زبان در کادر راهنما -->
+            <div class="language-selector">
+                <label for="language">زبان:</label>
+                <select id="language">
+                    <option value="fa">فارسی</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+
+            <button id="confirmButton">تأیید</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
